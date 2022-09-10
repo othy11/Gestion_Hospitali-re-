@@ -1,0 +1,1 @@
+ALTER TABLE `invoice` DROP FOREIGN KEY `invoice_ibfk_1`; ALTER TABLE `invoice` ADD CONSTRAINT `invoice_ibfk_1` FOREIGN KEY (`id_rendezvous`) REFERENCES `appointment`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
